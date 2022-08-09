@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: palevioletred;
+}
+.navigation{
+    padding: 20px;
+    width: 25vw;
+    height: 100vh;
+    background-color: #8d2050;
+    justify-content: end;
+}
+.hamburger{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    height: 5px;
+    width: 35px;
+    background:#fff;
+    margin: 10px auto;
+}
+.bar:hover{
+   transform: translateY(1)
+}
+.bar:hover:nth-child(1){
+    transform: translateY(1) rotate(45deg);
+    width: 25px;
+}
+.bar:hover:nth-child(2){
+    transform: translateY(0px); 
+    width: 48px;
+}
+.bar:hover:nth-child(3){
+    transform: translateX(60px) rotate(315deg);
+    width: 48px;
+}
+.names {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    gap: 30px;
+    padding: 0 100px 0 0;
+}
+.name {
+    color: #fff;
+font-size: 1.2em;
+cursor: pointer;
+}
+.na {
+    cursor: pointer;
+    min-height: 30px;
+}
+.na div:nth-of-type(2n + 1) {
+    display: none;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: 5s;
+}
+.na:hover div:nth-of-type(1) {
+    display: block;
+    transform: translateY(-5px);
+}
+.na:hover div:nth-of-type(3) {
+    display: block;
+    transform: translateY(5px);
+}
