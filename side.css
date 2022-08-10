@@ -26,25 +26,33 @@ body{
     justify-content: center;
 }
 .bar{
-    height: 5px;
-    width: 35px;
+    height: 4px;
+    width: 32px;
     background:#fff;
-    margin: 10px auto;
+    margin: 7px auto;
 }
 .bar:hover{
    transform: translateY(1)
 }
-.bar:hover:nth-child(1){
-    transform: translateY(1) rotate(45deg);
-    width: 25px;
+.bar:nth-child(1) {
+    transform-origin: 0% 0%;
+    transition: 0.4s ease-in-out;
 }
-.bar:hover:nth-child(2){
-    transform: translateY(0px); 
-    width: 48px;
+.bar:nth-child(2) {
+    transition: 0.2s ease-in-out;
 }
-.bar:hover:nth-child(3){
-    transform: translateX(60px) rotate(315deg);
-    width: 48px;
+.bar:nth-child(3) {
+    transform-origin: 0% 100%;
+    transition: 0.4s ease-in-out;
+}
+.hamburger:hover div.bar:nth-child(1){
+    transform: rotate(45deg);
+}
+.hamburger:hover div.bar:nth-child(2){
+    transform: scale(0);
+}
+.hamburger:hover div.bar:nth-child(3){
+    transform: rotate(-45deg);
 }
 .names {
     display: flex;
