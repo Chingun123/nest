@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-1 {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid green;
+    box-shadow: 0 0 10px 5px lightgreen;
+    z-index: 0;
+}
+
+.main-2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0 0 10px 5px lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-2 > div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px 5px lightgreen inset;
+}
+
+.head-2 {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    box-shadow: 0 0 10px 5px lightgreen;
+    border: 1px solid green;
+    z-index: 1;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: toirog;
+    z-index: 2;
+}
+
+.main-3 {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 30px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: toirog;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: black;
+    gap: -5px;
+}
+
+@keyframes toirog {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
