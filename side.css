@@ -74,8 +74,15 @@ body {
     transition: 0.4s ease-in-out;
 }
 
-input[type="checkbox"]:checked + .hamburger + .names {
-    transform: translateX(100px);
+input[type="checkbox"]:checked + .hamburger + .names > .name-1 {
+    opacity: 1;
+}
+input[type="checkbox"]:checked + .hamburger + .names > .name-2 {
+    transform: translateX(30px);
+    opacity: 1;
+}
+input[type="checkbox"]:checked + .hamburger + .names > .name-3   {
+    transform: translateX(60px);
     opacity: 1;
 }
 
@@ -96,11 +103,23 @@ input[type="checkbox"]:checked + .hamburger > .hamburger-lines .line3 {
     justify-content: start;
     align-items: flex-end;
     gap: 30px;
-    margin: 0 200px 0 0;
-    opacity: 0;
-    transition: 0.4s ease-in-out;
+    margin: 0 80px 0 0;
 }
-
+.name-1 {
+    opacity: 1;
+    transition: 0.4s ease-out;
+    opacity: 0;
+}
+.name-2 {
+    margin-right: 30px;
+    transition: 0.5s ease-out;
+    opacity: 0;
+}
+.name-3 {
+    margin-right: 60px;
+    transition: 0.6s ease-out;
+    opacity: 0;
+}
 .name {
     color: #fff;
     font-size: 1.2em;
