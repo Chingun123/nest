@@ -29,15 +29,15 @@ body {
 }
 
 .checkbox {
-  position: absolute;
-  display: block;
-  height: 32px;
-  width: 32px;
-  opacity: 0;
-  cursor: pointer;
-  top: 34px;
-  left: 40px;
-  z-index: 2;
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    opacity: 0;
+    cursor: pointer;
+    top: 34px;
+    left: 40px;
+    z-index: 2;
 }
 
 .hamburger-lines {
@@ -73,52 +73,51 @@ body {
   transform-origin: 0% 100%;
   transition: 0.4s ease-in-out;
 }
-
 input[type="checkbox"]:checked + .hamburger + .names > .name-1 {
-  opacity: 1;
+    opacity: 1;
 }
 input[type="checkbox"]:checked + .hamburger + .names > .name-2 {
-  transform: translateX(30px);
-  opacity: 1;
+    transform: translateX(30px);
+    opacity: 1;
 }
 input[type="checkbox"]:checked + .hamburger + .names > .name-3   {
-  transform: translateX(60px);
-  opacity: 1;
+    transform: translateX(60px);
+    opacity: 1;
 }
 
 input[type="checkbox"]:checked + .hamburger > .hamburger-lines .line1 {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 input[type="checkbox"]:checked + .hamburger > .hamburger-lines .line2 {
-  transform: scaleY(0);
+    transform: scaleY(0);
 }
 
 input[type="checkbox"]:checked + .hamburger > .hamburger-lines .line3 {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 .names {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-end;
-  gap: 30px;
-  margin: 0 80px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    gap: 30px;
+    margin: 0 80px 0 0;
 }
 .name-1 {
-  opacity: 1;
-  transition: 0.4s ease-out;
-  opacity: 0;
+    opacity: 1;
+    transition: 0.4s ease-out;
+    opacity: 0;
 }
 .name-2 {
-  margin-right: 30px;
-  transition: 0.5s ease-out;
-  opacity: 0;
+    margin-right: 30px;
+    transition: 0.5s ease-out;
+    opacity: 0;
 }
 .name-3 {
-  margin-right: 60px;
-  transition: 0.6s ease-out;
-  opacity: 0;
+    margin-right: 60px;
+    transition: 0.6s ease-out;
+    opacity: 0;
 }
 .name {
   color: #fff;
@@ -126,22 +125,22 @@ input[type="checkbox"]:checked + .hamburger > .hamburger-lines .line3 {
   cursor: pointer;
 }
 .na {
-  cursor: pointer;
-  min-height: 30px;
-  width: 80px;
+    cursor: pointer;
+    min-height: 30px;
+    width: 80px;
 }
 .na div:nth-of-type(2n + 1) {
-  display: none;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  transition: 0.4s;
+    opacity: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.4s;
 }
 .na:hover div:nth-of-type(1) {
-  display: block;
-  transform: translateY(-5px);
+    opacity: 1;
+    transform: translateY(-5px);
 }
 .na:hover div:nth-of-type(3) {
-  display: block;
-  transform: translateY(5px);
+    opacity: 1;
+    transform: translateY(5px);
 }
